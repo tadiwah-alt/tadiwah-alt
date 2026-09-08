@@ -22,7 +22,7 @@ I build RESTful APIs, database-driven applications, containerized services, and 
   - Flask and PostgreSQL application containerized with Docker Compose.
   - Includes environment-based configuration and deployment documentation.
 
-- [Cybersecurity RAG Education System] ([REPOSITORY-LINK](https://github.com/tadiwah-alt/cybersecurity-rag-capstone)
+- [Cybersecurity RAG Education System] ([REPOSITORY-LINK](https://github.com/tadiwah-alt/cybersecurity-rag-capstone))
   - Python-based retrieval-augmented generation system using ChromaDB and OpenAI APIs.
   - Includes retrieval evaluation metrics and an interactive Streamlit dashboard.
 

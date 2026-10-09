@@ -2,19 +2,18 @@
 
 Backend developer and cybersecurity graduate focused on cloud security, secure software development, and infrastructure automation.
 
-I build RESTful APIs, database-driven applications, containerized services, and cloud detection/security pipelines. I'm particularly interested in cloud security engineering, infrastructure as code, and building systems that detect and prevent threats rather than just react to them.
+I build RESTful APIs, database-driven applications, containerized services, and cloud security pipelines that detect, prevent, and respond to threats. I'm interested in cloud security engineering, infrastructure as code, and AI.
 
 ## Technical Focus
 
 **Cloud & Security**
-- AWS (EC2, RDS, S3, IAM, CloudTrail, GuardDuty)
+- AWS (EC2, RDS, S3, IAM, CloudTrail, GuardDuty, EventBridge, Lambda)
 - Terraform (Infrastructure as Code)
-- Checkov (static analysis / policy-as-code)
-- GitHub Actions (CI/CD)
+- Checkov (static analysis) and GitHub Actions (CI)
 - IAM policy design, threat detection, MITRE ATT&CK
 
 **Backend & Languages**
-- Java, Python, SQL, Bash
+- Java, Python (boto3, Slack Bolt), SQL, Bash
 - Spring Boot, Flask
 - RESTful APIs, OpenAPI/Swagger
 - PostgreSQL, MySQL, Redis
@@ -27,19 +26,22 @@ I build RESTful APIs, database-driven applications, containerized services, and 
 ## Featured Projects
 
 **[Cloud SIEM Detection Lab](https://github.com/tadiwah-alt/cloud-siem-detection-lab)**
-Terraform-built AWS detection pipeline — CloudTrail, GuardDuty, and S3, hardened against a Checkov static analysis scan with findings enforced automatically via GitHub Actions. Includes documented GuardDuty findings mapped to MITRE ATT&CK and a full debugging writeup.
+A detect, prevent, respond pipeline built entirely in Terraform on AWS. CloudTrail logs to S3, and GuardDuty findings are documented against MITRE ATT&CK. An EventBridge rule triggers a Lambda function that disables compromised IAM access keys. Checkov scans every push through GitHub Actions, and each accepted risk is documented. The repo includes a debugging write-up.
 
 **[Cybersecurity RAG Education System](https://github.com/tadiwah-alt/cybersecurity-rag-capstone)**
-Python-based retrieval-augmented generation system using ChromaDB and OpenAI APIs, with custom retrieval evaluation metrics and an interactive Streamlit dashboard.
+Team capstone: a Python retrieval-augmented generation system using ChromaDB and OpenAI APIs, with custom retrieval evaluation metrics and a Streamlit dashboard. I served as Lead AI & Application Security Developer.
 
 **[Dockerized Banking Application](https://github.com/tadiwah-alt/cloud-banking-api)**
-Flask and PostgreSQL application containerized with Docker Compose, including environment-based configuration and deployment documentation.
+Flask and PostgreSQL application containerized with Docker Compose, with environment-based configuration and deployment documentation.
+
+**[PL FootSmart](https://github.com/tadiwah-alt/pl-it-bot)** *(in progress)*
+A Slack bot that explains IT concepts through Premier League analogies. It uses Python, Slack Bolt, and Socket Mode, with secrets kept out of source control.
 
 ## Currently Learning
 
 - AWS Solutions Architect Associate
-- Cloud detection and automated remediation (GuardDuty → Lambda)
-- Distributed systems and cloud reliability
+- Data structures and algorithms in Python
+- AI-assisted security tooling and LLM security
 
 ## Contact
 

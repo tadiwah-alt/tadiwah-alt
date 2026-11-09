@@ -30,8 +30,8 @@ I build RESTful APIs, database-driven applications, containerized services, and 
 A detect, prevent, respond pipeline built entirely in Terraform on AWS. CloudTrail logs to S3, and GuardDuty findings are documented against MITRE ATT&CK. An EventBridge rule triggers a Lambda function that disables compromised IAM access keys. Checkov scans every push through GitHub Actions, and each accepted risk is documented. The repo includes a debugging write-up.
 *Stack: Terraform, AWS, Python, GitHub Actions*
 
-**[Container Scanning Pipeline](https://github.com/tadiwah-alt/container-scanning-pipeline)** *(in progress)*
-A GitHub Actions pipeline that builds a Flask API image and scans it with Trivy, failing the build on fixable HIGH and CRITICAL findings. The baseline scan found 44 OS-level findings (8 unique CVEs, none yet patched upstream) and 2 fixable Python findings. Next: hardening the Dockerfile (pinned versions, non-root user, `.dockerignore`) and documenting the before and after.
+**[Container Scanning Pipeline](https://github.com/tadiwah-alt/container-scanning-pipeline)**
+A GitHub Actions pipeline that builds a Flask API image and scans it with Trivy, failing the build on fixable HIGH and CRITICAL findings. The baseline had 2 fixable findings (vulnerable copies bundled inside `setuptools`) and 44 OS findings with no patch available. I fixed the fixable ones, pinned the base image and every dependency, added a `.dockerignore`, and ran the container as a non-root user. When a newer vulnerability database later surfaced 4 more fixable OS findings with no code change, `apt-get upgrade` cleared them. The 47 findings that still have no patch (11 unique CVEs) are documented as accepted risks, and the Trivy action is pinned to a commit SHA.
 *Stack: Docker, Trivy, GitHub Actions*
 
 **[Cybersecurity RAG Education System](https://github.com/tadiwah-alt/cybersecurity-rag-capstone)**
@@ -52,8 +52,3 @@ A Slack bot that explains IT concepts through Premier League analogies. It has a
 - Data structures and algorithms in Python
 - Container and supply chain security
 - AI-assisted security tooling and LLM security
-
-## Contact
-
-- LinkedIn: [linkedin.com/in/tadiwa-hukuimwe-6a9159249](https://www.linkedin.com/in/tadiwa-hukuimwe-6a9159249)
-- Email: tadiwahukuimwe@gmail.com

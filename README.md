@@ -51,4 +51,5 @@ A Slack bot that explains IT concepts through Premier League analogies. It has a
 - AWS Solutions Architect Associate (in progress)
 - Data structures and algorithms in Python
 - Container and supply chain security
+- AI agents and Machine Learning
 - AI-assisted security tooling and LLM security

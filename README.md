@@ -42,7 +42,7 @@ Team capstone: a Python retrieval-augmented generation system using ChromaDB and
 Flask and PostgreSQL application containerized with Docker Compose, with environment-based configuration and deployment documentation.
 *Stack: Flask, PostgreSQL, Docker Compose*
 
-**[PL FootSmart](https://github.com/tadiwah-alt/pl-it-bot)** *(in progress)*
+**[PL FootSmart](https://github.com/tadiwah-alt/pl-it-bot)**
 A Slack bot that explains IT concepts through Premier League analogies. It has a no-repeat fact command and an interactive quiz with answer checking and input validation. Built with Python, Slack Bolt, and Socket Mode, with secrets kept out of source control.
 *Stack: Python, Slack Bolt*
 

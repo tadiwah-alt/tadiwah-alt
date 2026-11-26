@@ -13,7 +13,7 @@ I build RESTful APIs, database-driven applications, containerized services, and 
 - IAM policy design, threat detection, MITRE ATT&CK
 
 **Backend & Languages**
-- Java, Python (boto3, Slack Bolt), SQL, Bash
+- Java, Python (boto3, Slack Bolt), SQL, Bash, C++
 - Spring Boot, Django, Flask
 - RESTful APIs, OpenAPI/Swagger, automated testing
 - PostgreSQL, MySQL, Redis
